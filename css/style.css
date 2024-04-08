@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+.container {
+    width: 99%;
+    height: auto;
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+header address span {
+    font-size: 14px;
+}
+
+.social ion-icon {
+    padding: 0px 10px;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 4px 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li .active {
+    color: #0097e6;
+}
+
+nav ul li a:hover {
+    color: #0097e6;
+    transition: background 0.3s ease-in-out;
+}
+.hamburger
+{
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger ion-icon{
+    position: relative;
+    font-size: 23px;
+    color: #0097e6;
+    cursor: pointer;
+}
+main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/Gastronomy-Delights/img/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(47, 54, 64, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+main .overlay .herocontent h1 {
+    font-size: 4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+main .overlay .herocontent p {
+    width: 60%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 2.1em;
+}
+
+main .overlay .herocontent button {
+    padding: 7px 17px;
+    background: #0097e6;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid transparent;
+    font-weight: 800;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+main .overlay .herocontent button:hover {
+    background: none;
+    border: 2px solid white;
+    transition: border 0.3s ease-in-out;
+}
+
+#aboutus {
+    padding: 15vh 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutus .img {
+    position: relative;
+    height: 500px;
+    width: 40%;
+}
+
+#aboutus .img img {
+    position: absolute;
+    width: 100%;
+}
+
+#aboutus .text {
+    width: 60%;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.topheading {
+    font-size: 3em;
+    color: #0097e6;
+    text-align: center;
+    margin: 5vh 0px;
+    font-weight: 400;
+}
+
+#aboutus .text p {
+    font-size: 12px;
+}
+
+#aboutus .text p::selection {
+    background-color: #2f3640;
+    color: white;
+}
+
+/* Our Menu  */
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card-container .card-body a {
+    transition: all 0.3s ease-in-out;
+    background: #0097e6;
+    color: white;
+}
+.card-container .card-body a:hover {
+    transition: all 0.3s ease-in-out;
+    background: none;
+    border: 1px solid black;
+    color: black;
+}
+
+.sml-heading {
+    text-align: center;
+    color: #0097e6;
+    font-size: 1.3em;
+}
+
+#reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#reservation form {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#reservation form label {
+    font-size: 1.2em;
+    color: #0097e6;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#reservation form input,
+select {
+    padding: 6px 20px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 200;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#reservation form button {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 5px 14px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border:1px solid transparent;
+    top: 0%;
+    left: 0%;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+#reservation form button:hover{
+    transition: all 0.3s ease-in-out;
+    background: none;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+}
+#reservation .imgsection {
+    position: relative;
+    width: 50%;
+    margin: 20px 0px;
+    height: 60vh;
+    overflow: hidden;
+}
+#reservation .imgsection img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+#reservation .imgsection:hover img {
+    transform: scale(1.5);
+    cursor: zoom-in;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#testimonial {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.slider-container {
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.author {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+.testimonial img {
+    border-radius: 50%;
+}
+
+/* Special Section  */
+
+.specialsignup form{
+    width: 100%;
+    height: 50vh;
+    background-image: url('/Gastronomy-Delights/img/foodback-special.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+form .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+form .overlay input{
+    width: 60%;
+    background: none;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 7px 20px;
+}
+form .overlay button {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 5px 14px;
+    font-size: 1.2em;
+    font-weight: 200;
+    width: 30%;
+    top: 0%;
+    left: 0%;
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+form .overlay button:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #0097e6;
+    color: white;
+}
+
+/* Contact Us Section */
+
+#contact form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin: 0px auto;
+}
+#contact form input,textarea{
+    
+    padding: 6px 20px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 200;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    width: 100%;
+}
+#contact form button {
+    width: 60%;
+    margin: 0px auto;
+    padding: 7px 17px;
+    background: #0097e6;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid transparent;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: border 0.3s ease-in-out;
+}
+#contact form button:hover{
+    
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    transition: border 0.3s ease-in-out;
+}
+
+/* footer */
+footer{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+footer .topfooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

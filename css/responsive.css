@@ -1,0 +1,74 @@
+@media (max-width:900px) {
+nav{
+    position: absolute;
+    z-index: 100000;
+    height: auto;
+    background: white;
+    margin-top: 65px;
+    opacity: 0;
+    visibility: 0;
+}
+nav ul li {
+    display: block;
+    padding: 0px 0px 20px 0px;
+}
+nav.navactive{
+    opacity: 1;
+    visibility: 1;
+}
+
+.hamburger
+{
+    display: flex;
+}
+    main .overlay {
+        padding: 0px 0px 0px 30px;
+    }
+
+    main .overlay .herocontent h1 {
+        font-size: 2.5em;
+    }
+
+    main .overlay .herocontent p {
+        width: 90%;
+    }
+
+    #aboutus {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #aboutus .img {
+        position: relative;
+        height:400px;
+        width: 90%;
+    }
+    #aboutus .text{
+        width: 90%;
+    }
+    
+#reservation form {
+    width: 90%;
+}
+#reservation .imgsection {
+    width: 90%;
+}
+
+.slider {
+    flex-wrap: wrap;
+}
+.slider .testimonial{
+    margin: 10px 0px;
+}
+form .overlay input{
+    width: 90%;
+}
+
+#contact form {
+    width: 70%;
+}
+footer .topfooter{
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+}
